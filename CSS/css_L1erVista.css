@@ -1,0 +1,122 @@
+/*    box-shadow: 0 0 0 10px white;   */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #02071c;
+}
+
+/*contenedor principal(padre)*/
+.slide {
+    margin: 10%;
+    margin-top: 50px;
+    height: 550px;
+    display: block;
+}
+
+/*contenedor interno superior(hijo)*/
+.slide-inner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(500px + 3em);
+}
+
+/*contenedor interno medio(hijo)*/
+.slide-inner-med {
+    text-align: center;
+}
+
+/*estilo para titulo*/
+.slide-inner-med h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 90%;
+}
+
+/*estilo para parrafo*/
+.slide-inner-med p {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 60%;
+    color: #EBEBF5;
+}
+
+/*estilo para los botones*/
+.slide-button{
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    left: 42%;
+    
+}
+
+/*contenedor imagenes*/
+.slide-open:checked+.slide-item {
+    position: static;
+    display: block;
+    height: 50%;
+    opacity: 100;
+}
+
+/*mantiene las imagenes en su posicion*/
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+/*tamaño de las imagenes*/
+.slide-item img {
+    display: block;
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+/*posicion de los puntos*/
+.slide-indicador {
+    top: 30%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+/*posicion de los puntos en linea*/
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/*tamaño de los puntos*/
+.slide-circulo {
+    color: #002a4f;
+    cursor: pointer;
+    display: block;
+    font-size: 28px;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+/*check de los puntos*/
+#slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+    color: #4870FF;
+}

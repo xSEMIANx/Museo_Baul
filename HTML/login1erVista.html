@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSEO BAUL</title>
+    <link rel="stylesheet" href="/CSS/css_L1erVista.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <div class="slide-inner">
+        <input
+          class="slide-open"
+          type="radio"
+          id="slide-1"
+          name="slide"
+          aria-hidden="true"
+          hidden=""
+          checked="checked"
+        />
+        <div class="slide-item">
+          <img src="/IMAGES/PIRATA.png" />
+          <div class="slide-inner-med">
+            <h1>Audios Exclusivos</h1>
+            <p>
+              Tenemos una biblioteca de audios de piezas museograficas que no
+              encontraras en ningun otro lugar
+            </p>
+          </div>
+          <div class="slide-button">
+            
+            <button id="boton1">next</button>
+          </div>
+        </div>
+        <input
+          class="slide-open"
+          type="radio"
+          id="slide-2"
+          name="slide"
+          aria-hidden="true"
+          hidden=""
+        />
+        <div class="slide-item">
+          <img src="/IMAGES/ARTE.png" />
+          <div class="slide-inner-med">
+            <h1>Siente y escucha</h1>
+            <p>
+              No importa la distancia, replicas miniatura que te sumergen en su
+              historia
+            </p>
+          </div>
+          <div class="slide-button">
+            <button id="boton2">Next</button>
+          </div>
+        </div>
+        <input
+          class="slide-open"
+          type="radio"
+          id="slide-3"
+          name="slide"
+          aria-hidden="true"
+          hidden=""
+        />
+        <div class="slide-item">
+          <img src="/IMAGES/OBJETOS.png" />
+          <div class="slide-inner-med">
+            <h1>Museo en tus manos</h1>
+          </div>
+          <div class="slide-button">
+            <button id="boton3">Start</button>
+          </div>
+        </div>
+
+        <label for="slide-3" class="slide-control prev control-1"></label>
+        <label for="slide-2" class="slide-control next control-1"></label>
+        <label for="slide-1" class="slide-control prev control-2"></label>
+        <label for="slide-3" class="slide-control next control-2"></label>
+        <label for="slide-2" class="slide-control prev control-3"></label>
+        <label for="slide-1" class="slide-control next control-3"></label>
+        <ol class="slide-indicador">
+          <li>
+            <label for="slide-1" class="slide-circulo">•</label>
+          </li>
+          <li>
+            <label for="slide-2" class="slide-circulo">•</label>
+          </li>
+          <li>
+            <label for="slide-3" class="slide-circulo">•</label>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

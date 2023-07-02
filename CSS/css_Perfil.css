@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@200&display=swap');
+
+* {
+    box-sizing: content-box;
+    margin: auto;
+}
+
+body {
+    background-color: #02071c;
+}
+
+#Contenedor_Superior {
+    display: flex;
+    width: 360px;
+    height: 80px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+#Titulo_Perfil {
+    margin-left: 2%;
+    display: inline-flex;
+    width: 216px;
+    flex-direction: column;
+    color: var(--day-white-high-emphasis, #FFF);
+    /* Headline 6 */
+    font-size: 20px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+#Contenedor_Registrate {
+    display: flex;
+    width: 290px;
+    padding: 24px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 24px;
+    border: 1px solid var(--night-background-tertiary, #2D344B);
+    background: var(--night-background-secondary, #21283F);
+}
+
+#Contenedor_Descripcion {
+    text-align: center;
+    width: 264px;
+    height: 130px;
+}
+
+#LOGINIMG {
+    width: 72.274px;
+    height: 72px;
+    flex-shrink: 0;
+}
+
+#Titulo_Descripcion {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--dark-label-primary, #FFF);
+    text-align: center;
+    /* Subtitle 1 */
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+#Subtitulo_Descripcion {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--dark-label-secondary, rgba(235, 235, 245, 0.60));
+    text-align: center;
+    /* Caption */
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+
+#Contenedor_Boton_Google {
+    display: flex;
+    height: 20px;
+    padding: 14px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--night-background-primery, #141927);
+    gap: 8px;
+}
+
+#iconoGoogle {
+    width: 22px;
+    height: 22px;
+}
+
+#Titulo_boton {
+    color: var(--dark-system-white, #FEFEFE);
+    /* Button */
+    font-size: 16px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+}
+
+.Centrales {
+    width: 360px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.Icono_Izquierdo {
+    margin-left: 3%;
+    display: flex;
+    width: 260px;
+    height: 56px;
+    gap: 16px;
+    flex-shrink: 0;
+
+}
+
+.Contenedor_Imagen1 {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    opacity: 1;
+    background: url(/IMAGES/ex.svg);
+    text-align: center;
+}
+
+.Contenedor_Verde {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    opacity: 1;
+    background: url(/IMAGES/Ellipse\ verde.svg);
+    text-align: center;
+}
+
+.Contenedor_Rojo {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    opacity: 1;
+    background: url(/IMAGES/Ellipse\ rojo.svg);
+}
+
+.Imagenes_internas {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.Parrafo {
+    display: flex;
+    width: 232px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--dark-label-primary, #FFF);
+    /* Subtitle 1 */
+    font-size: 16px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.Icono_Derecho {
+    display: flex;
+    width: 50px;
+    height: 56px;
+    flex-shrink: 0;
+}
+
+.Flecha {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+#Footer {
+    display: flex;
+    width: auto;
+    height: 70px;
+    flex-shrink: 0;
+    background-color: #21283F;
+}
+
+#Descarga_imagen {
+    width: 24px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+#Musica_imagen {
+    width: 24px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+#Persona_imagen {
+    width: 24px;
+    height: 22px;
+    flex-shrink: 0;
+}

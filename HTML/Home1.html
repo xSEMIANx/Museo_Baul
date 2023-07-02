@@ -7,56 +7,74 @@
     <link rel="stylesheet" href="/CSS/css_home1.css" />
   </head>
   <body>
-    <div class="Contenedor_superior1">
-      <h1 id="Titulo_Sup">Descubre tu Baúl</h1>
+    <div id="Contenedor_superior">
+      <p id="Titulo_T">Descubre tu Baúl</p>
     </div>
 
-    <div class="Contenedor_central">
-      <div class="Contenedor_Menu">
-        <img src="/IMAGES/menupuntos.svg" alt="" id="Menu_puntos" />
-        <h1 id="Nombre_Menu">Todos</h1>
+    <div id="Contenedor_secundario">
+      <div class="dropdown">
+        <button id="dropbtn">
+          <!--Agregar funcionalidad al boton-->
+          <img src="/IMAGES/menupuntos.svg" alt="" id="Menu_puntos" />
+          <p id="Titulo">Todos</p>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Inicio</a>
+          <a href="#">Favoritos</a>
+          <a href="#">Recomendados</a>
+        </div>
       </div>
-      <div id="Contenedor_lupa">
-        <img src="/IMAGES/Lupa.svg" alt="" id="lupa" />
-      </div>
-      <div class="contenedor_hijo">
-        <div class="Contenedor_central1">
-          <div class="contenedor_superiorIzquierdo">
-            <img src="/IMAGES/PIRAMIDES.png" alt="" class="Imagenes" />
-            <h1 class="Titulo_imagen">Tula de allende</h1>
-            <p class="cantidad_songs">7 audios</p>
+      <img src="/IMAGES/Lupa.svg" alt="" id="Lupa" />
+    </div>
+
+    <div id="Contenedor_central">
+      <div id="Contenedor_central2">
+        <div id="Contenedor_superiorC">
+          <div id="Contenedor_imagenDS">
+            <img src="/IMAGES/PIRAMIDES.png" alt="" class="Imagenes_C" />
+            <div class="Texto">
+              <p class="Titulo_C">Tula de Allende</p>
+              <p class="Subtitulo_C">7 audios</p>
+            </div>
           </div>
-          <div class="contenedor_superiorDerecho">
-            <img src="/IMAGES/CHICHEN ITZA.png" alt="" class="Imagenes" />
-            <h1 class="Titulo_imagen">Chichen Itza</h1>
-            <p class="cantidad_songs">20 audios</p>
+          <div id="Contenedor_imagenIS">
+            <img src="/IMAGES/CHICHEN ITZA.png" alt="" class="Imagenes_C" />
+            <div class="Texto">
+              <p class="Titulo_C">Chichen Itza</p>
+              <p class="Subtitulo_C">20 audios</p>
+            </div>
           </div>
         </div>
-        <div class="Contenedor_central2">
-          <div class="contenedor_inferiorIzquierdo">
-            <img src="/IMAGES/MAMUT.png" alt="" class="Imagenes" />
-            <h1 class="Titulo_imagen">Mamuts</h1>
-            <p class="cantidad_songs">10 audios</p>
+        <div id="Contenedor_inferiorC">
+          <div id="Contenedor_imagenDI">
+            <img src="/IMAGES/MAMUT.png" alt="" class="Imagenes_C" />
+            <div class="Texto">
+              <p class="Titulo_C">Mamuts</p>
+              <p class="Subtitulo_C">10 audios</p>
+            </div>
           </div>
-          <div class="contenedor_inferiorDerecho">
-            <img src="/IMAGES/DINOSAURIOS.png" alt="" class="Imagenes" />
-            <h1 class="Titulo_imagen">Dinosaurios</h1>
-            <p class="cantidad_songs">30 audios</p>
+          <div id="Contenedor_imagenII">
+            <img src="/IMAGES/DINOSAURIOS.png" alt="" class="Imagenes_C" />
+            <div class="Texto">
+              <p class="Titulo_C">Dinosaurios</p>
+              <p class="Subtitulo_C">30 audios</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="Contenedor_inferior">
-      <div class="Contenedor_imagenesfooter1">
-        <img src="/IMAGES/Descarga.svg" alt="" class="Imagenes_footer" />
+    <div id="Footer">
+      <div id="item1">
+        <img src="/IMAGES/Descarga.svg" alt="" id="Descarga_imagen" />
       </div>
-      <div class="Contenedor_imagenesfooter2">
-        <img src="/IMAGES/Musica.svg" alt="" class="Imagenes_footer" />
+      <div id="item2">
+        <img src="/IMAGES/Musica.svg" alt="" id="Musica_imagen" />
       </div>
-      <div class="Contenedor_imagenesfooter3">
-        <img src="/IMAGES/Persona.svg" alt="" class="Imagenes_footer" />
+      <div id="item3">
+        <img src="/IMAGES/Persona.svg" alt="" id="Persona_imagen" />
       </div>
     </div>
+
   </body>
 </html>

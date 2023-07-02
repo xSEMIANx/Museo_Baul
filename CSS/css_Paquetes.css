@@ -373,7 +373,8 @@ body {
 
 #Footer {
     display: flex;
-    width: auto;
+    bottom: 0;
+    width: 100%;
     height: 70px;
     flex-shrink: 0;
     background-color: #21283F;

@@ -112,14 +112,13 @@ body {
 }
 
 .Contenedor_inferior {
-    top: 400px;
-    position: relative;
-    margin: auto;
-    background-color: #21283F;
+    display: flex;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 70px;
-    display: flex;
-    flex-direction: row;
+    flex-shrink: 0;
+    background-color: #21283F;
 }
 
 .Contenedor_imagenesfooter1 {

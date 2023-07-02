@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&display=swap');
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
 * {
     box-sizing: content-box;
@@ -35,7 +36,6 @@ body {
     display: flex;
     width: 360px;
     height: 80px;
-    gap: 200px;
 }
 
 #dropbtn {
@@ -43,7 +43,6 @@ body {
     padding: 8px 16px 8px 8px;
     justify-content: center;
     align-items: center;
-    gap: 4px;
     border-radius: 19px;
     background: var(--night-system-primery, #4870FF);
     cursor: pointer;
@@ -53,27 +52,32 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #02071c;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     display: block;
 }
 
+/*
 .dropdown-content a:hover {
     background-color: #f1f1f1
 }
+*/
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -104,9 +108,58 @@ body {
     width: 15.63px;
     height: 15.78px;
     flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+#container {
+    display: inline-block;
+    float: right;
+    position: relative;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+#searchform {
+    display: inline;
+    font-size: 1em;
+    border-radius: 8em;
+    padding: 0.3em;
+    background: transparent;
+}
+
+#s {
+
+    transition: all 0.2s ease-out;
+    width: 1px;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    opacity: 0;
+    color: #FFF;
+}
+
+#s:focus {
+    width: 8em;
+    opacity: 1;
+}
+
+label {
+    padding-left: 1px;
+    display: inline-block;
+    margin-top: 0.3em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.1em rgba(60, 60, 60, 0.3);
+    position: relative;
+    left: 0.1em;
 }
 
 #Contenedor_central {
+    margin-top: 1%;
     width: 328px;
     height: 416px;
     flex-shrink: 0;
@@ -127,7 +180,7 @@ body {
     width: 328px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 30px;
 }
 
 #Contenedor_imagenDS {
@@ -199,7 +252,7 @@ body {
     width: 328px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 30px;
 }
 
 #Contenedor_imagenDI {

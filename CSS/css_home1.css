@@ -195,6 +195,15 @@ label {
     flex-shrink: 0;
 }
 
+.Play_btn{
+    
+    border: 0;
+}
+
+.Iconos_play{
+    
+}
+
 .Imagenes_C {
     width: 156px;
     height: 156px;
